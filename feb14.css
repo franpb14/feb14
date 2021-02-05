@@ -1,0 +1,196 @@
+img{
+    position: absolute;
+  }
+  .carretera{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    border:2px red solid;
+  }
+  body{
+    overflow-y: hidden;
+  }
+  body::-webkit-scrollbar { width: 0;height: 0 !important }
+  .stop-scrolling { 
+      width: 100%; 
+      overflow: hidden; 
+  } 
+  .cuadro{
+    position: absolute;
+    background-color: #000028;
+    width: 100%;
+    height: 100px;
+  }
+  #luna{
+    position: fixed;
+    right:0;
+    height: 150px;
+  }
+  .cuadro{
+    background-color: #000028;
+    position: fixed;
+    left: 0;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%);
+    background-size: 4px 4px, 3px 3px, 5px 5px, 3px 3px, 6px 6px, 4px 4px, 5px 5px, 4px 4px, 6px 6px, 3px 3px, 5px 5px, 4px 4px, 3px 3px, 6px 6px, 5px 5px, 4px 4px, 5px 5px, 6px 6px;
+    background-position: 20% 10%, 5% 20%, 10% 75%, 22% 35%, 30% 30%, 40% 50%, 45% 20%, 65% 20%, 85% 30%, 98% 90%, 20% 80%, 50% 80%, 75% 80%, 89% 75%, 90% 95%, 60% 70%, 65% 40%, 90% 20%;
+    background-repeat: no-repeat;
+    animation: twinkle ease-in 0.3s infinite;
+  }
+  @keyframes twinkle {
+    to {
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 30%);
+    }
+  }
+  .mensaje{
+    position: absolute;
+    font-family: 'Press Start 2p';
+    color: white;
+    top:75px;
+    opacity: 0;
+    width: 100%;
+  }
+  .textoshowed{
+    position: absolute;
+    font-family: 'Press Start 2p';
+    color: white;
+    left: 90px;
+    top:100px;
+  }
+  .texto{
+    position: absolute;
+    opacity: 0;
+    font-family: 'Press Start 2p';
+    width: 600px;
+    bottom: 550px;
+    color: white;
+  }
+  #controles{
+    position: absolute;
+    height: 150px;
+    top: 150px;
+    left: 50px;
+  }
+  .farola{
+    position: absolute;
+    height: 400px;
+    bottom: 0px;
+    left: 10px;
+    z-index: 3;
+  }
+  .btnstart{
+    font-family: 'Press Start 2p';
+    z-index: 999;
+    position: absolute;
+    bottom: 200px;
+    left: 55px;
+    font-size: 30pt;
+    text-align: center;
+      display: inline-block;
+      margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: lightgray;
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -o-border-radius: 7px;
+      border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+  }
+  .btnseguir{
+    font-family: 'Press Start 2p';
+    z-index: 999;
+    position: absolute;
+    bottom: 450px;
+    opacity: 0;
+    left: 55px;
+    font-size: 30pt;
+    text-align: center;
+      display: inline-block;
+      margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: lightgray;
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -o-border-radius: 7px;
+      border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+  }
+  
+  #parking1{
+    position:absolute;
+    left: 0px;
+    height: 200px;
+    bottom: 200px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #parking2{
+    position:absolute;
+    left: 0px;
+    height: 200px;
+    bottom: 200px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #parking3{
+    position:absolute;
+    left: 0px;
+    height: 200px;
+    bottom: 200px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #netflix{
+    position: absolute;
+    height: 400px;
+    bottom: 0px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #megaocio{
+    position:absolute;
+    left: 150px;
+    height: 300px;
+    bottom: 350px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #billar{
+    position:absolute;
+    left: 0px;
+    height: 500px;
+    bottom: -125px;
+    z-index: 99;
+    opacity: 0;
+  }
+  #kfc{
+    position:absolute;
+    left: 0px;
+    height: 400px;
+    bottom: -5px;
+    z-index: 99;
+    opacity: 0;
+  }
+  .btnstart:active {
+      box-shadow: none;
+      position: absolute;
+    bottom: 190px;}
+  .btnseguir:active {
+      box-shadow: none;
+      position: absolute;
+      bottom: 440px;}
+  #coche{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom:24px;
+    transition: 0.2s;
+  }
