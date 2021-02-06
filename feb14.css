@@ -194,3 +194,9 @@ img{
     bottom:24px;
     transition: 0.2s;
   }
+  @media only screen and (max-width: 600px) {
+    #coche {
+      position: absolute;
+
+    }
+  }

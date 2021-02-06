@@ -5,6 +5,7 @@ window.onload=()=>{
     let coche = document.getElementById("coche")
     coche.style.left="0px"
     var scrollx=0
+    
     for(let i=14; i<40;i++){
       document.querySelector("#root").innerHTML+=`
       <img id="farola-${i}" class="farola" src="resources/farola.png"></img>
@@ -20,7 +21,7 @@ window.onload=()=>{
     }
     ponCarreteras()
     disableScroll()
-
+    
     function ponerCarretera(numCarretera){
       document.getElementById("generador").innerHTML+=`
       <img style="position: 'absolute';
@@ -32,6 +33,12 @@ window.onload=()=>{
     let topluna = 0;
     let nopasado1=true;
     window.onscroll = (event)=>{
+      console.log("wow")
+      if(window.innerWidth<=4000){
+        
+        console.log("lul")
+        document.getElementById("coche").style.left=parseInt(getComputedStyle(document.getElementById("coche")).left.replace("px","")) + window.scrollX
+      }
       let luna = document.getElementById("luna")
       rightluna+=0.25
       topluna+=0.05
