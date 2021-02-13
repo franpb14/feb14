@@ -6,7 +6,7 @@ window.onload=()=>{
     coche.style.left="0px"
     var scrollx=0
     
-    for(let i=14; i<40;i++){
+    for(let i=14; i<39;i++){
       document.querySelector("#root").innerHTML+=`
       <img id="farola-${i}" class="farola" src="resources/farola.png"></img>
       `
@@ -33,10 +33,8 @@ window.onload=()=>{
     let topluna = 0;
     let nopasado1=true;
     window.onscroll = (event)=>{
-      console.log("wow")
       if(window.innerWidth<=4000){
         
-        console.log("lul")
         document.getElementById("coche").style.left=parseInt(getComputedStyle(document.getElementById("coche")).left.replace("px","")) + window.scrollX
       }
       let luna = document.getElementById("luna")
@@ -58,9 +56,7 @@ window.onload=()=>{
       }
       var posicionp2 = parseInt(getComputedStyle(document.getElementById("parking2")).left.replace("px",""))
       if(window.scrollX>=(posicionp2)-200 && nopasado2){
-        console.log(nopasado2)
         nopasado2=false;
-        console.log(nopasado2)
         let seguir2 = document.getElementById("seguir2");
         seguir2.style.left=posicionp2+"px";
         seguir2.style.opacity=1;
