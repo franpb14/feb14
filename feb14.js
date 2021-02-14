@@ -1,5 +1,5 @@
 window.onload=()=>{
-          
+    window.scrollTo(0,0)
     let nopasado2=true;
     let nopasado3=true;
     let coche = document.getElementById("coche")
